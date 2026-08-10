@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Challenge Développeur du Cercle Scientifique Math-Info de l'UNILU." />
+    <meta name="theme-color" content="#10213f" />
+    <title>Challenge Développeur | Cercle Scientifique Math-Info</title>
+    <link rel="icon" href="assets/logo.jpg" type="image/jpeg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Poppins:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <canvas class="ambient-canvas" aria-hidden="true"></canvas>
+    <div class="topline"><div class="container topline-inner"><strong>UNILU / CERCLE SCIENTIFIQUE MATH-INFO</strong><span>10 · 16 AOÛT 2026</span></div></div>
+    <header class="nav" id="accueil">
+      <div class="container nav-inner">
+        <a class="brand" href="#accueil"><img src="assets/logo.jpg" alt="Logo du Cercle Scientifique Math-Info" /><span>CHALLENGE<br />DES DÉVELOPPEURS</span></a>
+        <nav class="nav-links" aria-label="Navigation principale">
+          <a href="#quiz">Quiz du jour</a><a href="#modalites">Modalités</a><a href="#a-propos">À propos</a><a href="#contact">Contact</a>
+        </nav>
+        <a class="nav-cta" data-form-link href="https://forms.gle/6rqXnz1rpiSCADeCA" target="_blank" rel="noopener">Participer ↗</a>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+      </div>
+      <nav class="mobile-menu" id="mobile-navigation" aria-label="Navigation mobile" hidden>
+        <a href="#quiz">Quiz du jour</a><a href="#modalites">Modalités</a><a href="#a-propos">À propos</a><a href="#contact">Contact</a>
+        <a data-form-link href="https://forms.gle/6rqXnz1rpiSCADeCA" target="_blank" rel="noopener">Participer au challenge ↗</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" data-reveal>
+        <div class="container hero-grid">
+          <div>
+            <h1>Es-tu prêt à<br /><span>relever le défi ?</span></h1>
+            <p class="hero-lead">Tu aimes l'informatique, les défis et les discussions techniques ? Réponds à trois quiz, explique ta démarche et partage ton code.</p>
+            <div class="hero-actions"><a class="button" href="#quiz">Découvrir le quiz <span>↗</span></a><a class="quiet-link" data-form-link href="https://forms.gle/6rqXnz1rpiSCADeCA" target="_blank" rel="noopener">Je participe <span>↗</span></a></div>
+          </div>
+          <aside class="deadline-card floating-card" aria-label="Informations importantes">
+            <div class="shape shape-zigzag" aria-hidden="true"></div><div class="shape shape-ring" aria-hidden="true"></div><div class="shape shape-square" aria-hidden="true"></div>
+            <div class="deadline-top"><span>Clôture · UTC+2 Lubumbashi</span><strong>16 août 2026 · 23h59</strong></div>
+            <div class="timer" aria-live="polite"><div><strong id="days">00</strong><span>jours</span></div><div><strong id="hours">00</strong><span>heures</span></div><div><strong id="minutes">00</strong><span>min</span></div><div><strong id="seconds">00</strong><span>sec</span></div></div>
+            <div class="deadline-facts"><span><b>50 $</b>à gagner</span><span><b>48 h</b>par quiz</span><span><b>3 min</b>de vidéo</span></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section quiz-section" id="quiz" data-reveal>
+        <div class="container">
+          <div class="section-heading"><div><p class="eyebrow">Le quiz du jour</p><h2>Commence par<br /><span>le problème 01.</span></h2></div></div>
+          <article class="quiz-card lift-card">
+            <div class="quiz-card-header"><span id="current-quiz-label">QUIZ 01 · LUNDI 10 AOÛT</span><span class="status" id="current-quiz-status">Permanent</span></div>
+            <div id="current-quiz-content">
+              <h3>CHALLENGE DÉVELOPPEUR : LE GPS DU LIVREUR</h3>
+              <div class="quiz-columns"><div><p>Une entreprise de livraison basée à Lubumbashi doit envoyer un coursier livrer un colis urgent à Kinshasa via plusieurs villes intermédiaires. Chaque portion de route prend un temps précis en minutes.</p><p><strong>Objectif :</strong> trouver l'itinéraire qui minimise le temps total et retourner la durée minimale avec la liste ordonnée des villes.</p></div><div class="quiz-brief"><span>Auteur</span><strong>Van Djengu</strong><span>Entrée</span><strong>Graphe orienté et pondéré</strong><span>Sortie</span><strong>Durée minimale + itinéraire</strong></div></div>
+            </div>
+            <div class="quiz-actions"><a class="button" href="assets/quiz-1-gps-livreur.pdf" target="_blank" rel="noopener">Télécharger le PDF ↗</a><a class="quiet-link quiet-link-light" data-form-link href="https://forms.gle/6rqXnz1rpiSCADeCA" target="_blank" rel="noopener">Remplir le formulaire ↗</a></div>
+          </article>
+          <div class="upcoming"><div><span>QUIZ 02 · MERCREDI 12 AOÛT</span><strong>À venir</strong></div><div><span>QUIZ 03 · VENDREDI 14 AOÛT</span><strong>À venir</strong></div></div>
+        </div>
+      </section>
+
+      <section class="section" id="modalites" data-reveal>
+        <div class="container">
+          <div class="section-heading compact"><div><p class="eyebrow">Modalités</p><h2>Quatre règles<br />pour participer.</h2></div><p>Une même idée : être clair, public et prêt à échanger.</p></div>
+          <div class="rules-carousel" aria-label="Modalités de participation">
+            <div class="rules-viewport">
+              <div class="rules-track" role="list">
+                <article class="lift-card" role="listitem"><span>01</span><h3>Vidéo courte</h3><p>Explique ton approche, ton algorithme et une démonstration en 3 minutes maximum.</p></article><article class="lift-card" role="listitem"><span>02</span><h3>Code public</h3><p>Publie ton code source et ajoute le lien GitHub dans ta publication.</p></article><article class="lift-card" role="listitem"><span>03</span><h3>48 heures</h3><p>La vidéo, le code et le lien doivent être publiés avant la fin du délai.</p></article><article class="lift-card" role="listitem"><span>04</span><h3>Discussion</h3><p>Mentionne l'auteur et le Cercle, défends tes idées et argumente techniquement.</p></article>
+              </div>
+            </div>
+            <div class="rules-controls" aria-label="Contrôles des modalités">
+              <button class="rules-control" type="button" data-rules-prev aria-label="Modalité précédente">←</button>
+              <span class="rules-status" aria-live="polite">01 / 04</span>
+              <button class="rules-control" type="button" data-rules-next aria-label="Modalité suivante">→</button>
+              <button class="rules-control rules-pause" type="button" data-rules-pause aria-pressed="false">Pause</button>
+            </div>
+          </div>
+          <p class="participation-line"><strong>Format :</strong> une question de réflexion et conception, puis une question de culture technique : réseaux, cybersécurité, cloud, développement, systèmes ou bases de données.</p>
+        </div>
+      </section>
+
+      <section class="section evaluation-section" data-reveal>
+        <div class="container evaluation-layout">
+          <div><p class="eyebrow">Évaluation</p><h2>La qualité de la<br />démarche compte.</h2><ul class="criteria-list"><li>Qualité des réponses</li><li>Pertinence du raisonnement</li><li>Clarté des explications</li><li>Régularité de participation</li><li>Qualité des échanges</li></ul></div>
+          <div class="reward-card"><span>Récompense</span><strong>50 $</strong><p>Pour la meilleure solution et la meilleure participation aux échanges.</p></div>
+        </div>
+      </section>
+
+      <section class="section" id="a-propos" data-reveal>
+        <div class="container about-grid">
+          <div><p class="eyebrow">À propos</p><h2>Apprendre ensemble,<br />penser plus loin.</h2><p>Initié par le Cercle Scientifique MATH-INFO de l'UNILU, ce challenge rassemble développeurs, étudiants en informatique et passionnés de technologie autour de problèmes réels.</p><p class="partners">Avec Espacesis, DevClub ISC, DevCom UPL, Club Informatique ESI et d'autres communautés.</p></div>
+          <blockquote class="president-note"><p>« La récompense la plus précieuse n'est pas les 50 $. C'est l'esprit que vous développerez en acceptant d'être mis à l'épreuve. Après tout, le véritable concurrent n'est pas l'autre, mais celui que vous étiez hier. »</p><footer><strong>Djochrist K</strong>Président du Cercle Scientifique Math-Info · <a href="https://djochristk.com/" target="_blank" rel="noopener">djochristk.com</a></footer></blockquote>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact" data-reveal>
+      <div class="container connect-shell">
+        <div class="connect-copy"><p class="eyebrow">Contact</p><h2>Let's<br /><span>connect.</span></h2><p>Une question, une idée ou une solution à partager ? La discussion commence ici.</p></div>
+        <div class="contact-links">
+          <a class="contact-email" href="mailto:cerclescientifiquemathinfo@gmail.com">cerclescientifiquemathinfo@gmail.com <span>↗</span></a>
+          <a class="contact-phone" href="tel:+243819730124">+243 819 730 124 <span>↗</span></a>
+          <div class="social-links">
+             <a href="https://www.linkedin.com/company/cercle-scientifique-math-info/" target="_blank" rel="noopener" aria-label="Suivre le Cercle sur LinkedIn"><b aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6.5 8.5V20M6.5 4.5v.1M11 20v-6.4a3.6 3.6 0 0 1 7.2 0V20M11 8.5V20"/></svg></b><span>LinkedIn</span><i>↗</i></a>
+             <a href="https://www.facebook.com/profile.php?id=61570028531958" target="_blank" rel="noopener" aria-label="Suivre le Cercle sur Facebook"><b aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 20v-8h2.7l.4-3H14V7.1c0-.9.3-1.5 1.6-1.5h1.7V2.9c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3V9H8v3h2.6v8"/></svg></b><span>Facebook</span><i>↗</i></a>
+             <a href="https://chat.whatsapp.com/CZFoi5FpLXv6MO5vmirh6F?s=cl&p=a&ilr=4" target="_blank" rel="noopener" aria-label="Rejoindre le groupe WhatsApp"><b aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5Z"/><path d="M9 8.5c.3-.5.6-.5.9-.1l.8 1c.2.3.2.5 0 .8l-.4.5c.6 1.1 1.4 1.8 2.6 2.4l.5-.5c.2-.2.5-.2.8 0l1 .7c.4.3.4.6.1 1-.3.5-.8.8-1.4.8-2.5-.2-5.2-2.8-5.4-5.2-.1-.6.1-1.1.5-1.4Z"/></svg></b><span>WhatsApp</span><i>↗</i></a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom"><span>© 2026 Cercle Scientifique Math-Info · UNILU</span><a href="#accueil">Retour en haut ↑</a></div>
+    </footer>
+    <button class="to-top" type="button" aria-label="Retour en haut">↑</button>
+    <script src="script.js"></script>
+  </body>
+</html>
