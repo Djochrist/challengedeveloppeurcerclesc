@@ -1,4 +1,4 @@
-const CONFIG={formUrl:"https://forms.gle/6rqXnz1rpiSCADeCA",currentQuizId:1,timezone:"Africa/Lubumbashi",deadline:"2026-08-16T23:59:00+02:00"};
+const CONFIG={formUrl:"https://forms.gle/6rqXnz1rpiSCADeCA",currentQuizId:2,timezone:"Africa/Lubumbashi",deadline:"2026-08-16T23:59:00+02:00"};
 const ambientCanvas=document.querySelector(".ambient-canvas");
 if(ambientCanvas){
   const context=ambientCanvas.getContext("2d");
@@ -61,7 +61,7 @@ if(ambientCanvas){
 }
 const quizContent={
   1:{label:"QUIZ 01 · LUNDI 10 AOÛT",status:"Permanent",title:"CHALLENGE DÉVELOPPEUR : LE GPS DU LIVREUR",body:"Une entreprise de livraison basée à Lubumbashi doit envoyer un coursier livrer un colis urgent à Kinshasa via plusieurs villes intermédiaires. Chaque portion de route prend un temps précis en minutes.",objective:"Objectif : trouver l'itinéraire qui minimise le temps total et retourner la durée minimale avec la liste ordonnée des villes.",author:"Van Djengu"},
-  2:{label:"QUIZ 02 · MERCREDI 12 AOÛT",status:"À venir",title:"Le quiz 2 arrive bientôt.",body:"Le deuxième sujet sera publié le mercredi 12 août 2026.",objective:"Le quiz 1 reste accessible dans l'historique permanent.",author:"À confirmer"},
+  2:{label:"QUIZ 02 · MERCREDI 12 AOÛT",status:"Ouvert à tous",title:"CHALLENGE DÉVELOPPEUR : SYNCHRONISATION OFFLINE",body:"Imagine que tu dois concevoir une application utilisée chaque jour par des agents terrain pour enregistrer des opérations importantes. Les agents travaillent en déplacement avec des connexions Internet irrégulières et doivent terminer leur journée sans perdre de données.",objective:"Les participants ayant raté le quiz 1 peuvent également participer au quiz 2. Objectif : proposer une architecture fiable pour le stockage local, la reprise de synchronisation, la détection des conflits et la cohérence finale des données.",author:"Yves Kalume · Google Developer Expert Android"},
   3:{label:"QUIZ 03 · VENDREDI 14 AOÛT",status:"À venir",title:"Le quiz 3 arrive bientôt.",body:"Le troisième sujet sera publié le vendredi 14 août 2026.",objective:"Le quiz 1 reste accessible dans l'historique permanent.",author:"À confirmer"}
 };
 document.querySelectorAll("[data-form-link]").forEach((link)=>link.href=CONFIG.formUrl);
